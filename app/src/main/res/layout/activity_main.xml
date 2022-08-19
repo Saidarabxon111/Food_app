@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btn_menyu"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#22E286"
+        android:text="Menyu"
+        android:textSize="15sp"
+        android:layout_margin="5dp"
+        android:textAllCaps="false"
+        />
+
+    <Button
+        android:id="@+id/btn_plus"
+        android:layout_width="136dp"
+        android:layout_height="60dp"
+        android:backgroundTint="#22E286"
+        android:textAllCaps="false"
+        android:textSize="13.9sp"
+        android:layout_margin="5dp"
+        android:text="Taom qo'shish"
+
+        />
+
+
+</LinearLayout>

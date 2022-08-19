@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="UI.AddFoodActivity">
+
+    <EditText
+        android:id="@+id/edt_name"
+        style="@style/edit_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Taom nomi"
+        app:layout_constraintBottom_toTopOf="@id/kerakli_mahsulotlar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1" />
+
+    <EditText
+        android:id="@+id/kerakli_mahsulotlar"
+        style="@style/edit_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Kerakli mahsulotlar"
+        app:layout_constraintBottom_toTopOf="@id/tayyorlash_tartibi"
+        app:layout_constraintTop_toBottomOf="@id/edt_name"
+        app:layout_constraintVertical_weight="2" />
+
+    <EditText
+        android:id="@+id/tayyorlash_tartibi"
+
+        style="@style/edit_text_style"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:hint="Taom tayyorlash tartibi"
+        app:layout_constraintBottom_toTopOf="@id/btn_save"
+        app:layout_constraintTop_toBottomOf="@id/kerakli_mahsulotlar"
+        app:layout_constraintVertical_weight="5" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#22E286"
+        android:text="save"
+        android:layout_margin="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tayyorlash_tartibi" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
